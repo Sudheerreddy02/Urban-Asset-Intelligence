@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f172a; /* slate-900 */
+  --foreground: #f8fafc; /* slate-50 */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.7); /* slate-800 with opacity */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.neon-border {
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5), inset 0 0 10px rgba(56, 189, 248, 0.5);
+  border: 1px solid #38bdf8; /* sky-400 */
+}
