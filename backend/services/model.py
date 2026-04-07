@@ -13,7 +13,7 @@ class YoloModel:
         os.makedirs(settings.WEIGHTS_DIR, exist_ok=True)
         # Load standard yolov8n-seg model for the makeathon MVP demonstration
         try:
-            # If the weights path doesn't exist, YOLO will download standard coco base implicitly
+            # If the custom weights don't exist yet, YOLO will download standard coco base implicitly
             self.model = YOLO(settings.MODEL_WEIGHTS_PATH if os.path.exists(settings.MODEL_WEIGHTS_PATH) else "yolov8n-seg.pt")
             print("YOLOv8 Model loaded successfully.")
         except Exception as e:

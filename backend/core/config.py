@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     
     # Path to weights relative to the backend directory
     WEIGHTS_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "weights")
-    MODEL_WEIGHTS_PATH: str = os.path.join(WEIGHTS_DIR, "yolov8n-seg.pt")
+    MODEL_WEIGHTS_PATH: str = os.path.join(WEIGHTS_DIR, "best.pt")
     
     class Config:
         case_sensitive = True
